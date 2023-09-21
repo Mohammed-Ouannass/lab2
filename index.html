@@ -8,14 +8,20 @@
     <link rel="stylesheet" media="screen" href="css/screen.css" />
   </head>
   <body>
-    <form action="javascript:void(0);" method="post" autocomplete="on">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required>
-      <input type="submit" value="Submit">
+    <form action="javascript:void(0);" method="post" autocomplete="on" class="custom-form">
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required class="input-field">
+      </div>
+      <div class="form-field">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required class="input-field">
+      </div>
+      <div class="form-field">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required class="input-field">
+      </div>
+      <input type="submit" value="Submit" class="submit-button">
     </form>
   </body>
 </html>
